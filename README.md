@@ -1,4 +1,4 @@
-# Skynet Portal
+# Public Portal
 
 ## Setup Guide
 
@@ -6,7 +6,7 @@ A setup guide with scripts to install prerequisites can be found in the [setup-s
 
 Once the setup guide is complete you will be running:
 
-- `siad` configured as a Skynet Portal
+- `spd` configured as a Public Portal
 - an nginx webserver serving webportal
 
 ## Web application
