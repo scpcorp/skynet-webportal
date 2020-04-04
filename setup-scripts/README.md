@@ -22,7 +22,7 @@ You a can now ssh into your machine as the user `user`.
 5. On your local machine: `ssh-copy-id user@ip-addr`
 6. On your local machine: `ssh user@ip-addr`
 7. Now logged in as `user`: `sudo apt-get install git`
-8. `git clone https://github.com/NebulousLabs/skynet-webportal`
+8. `git clone https://github.com/scpcorp/skynet-webportal`
 9. `cd skynet-webportal/setup-scripts`
 10. `./setup.sh`
 11. Once DNS records are set you can run: `./letsencrypt-setup.sh`
