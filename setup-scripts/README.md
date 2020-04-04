@@ -1,4 +1,4 @@
-# Skynet Portal Setup Scripts
+# Public Portal Setup Scripts
 
 This directory contains a setup guide and scripts that will install and
 configure some basic requirements for running a Skynet Portal. The assumption is
