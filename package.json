@@ -1,8 +1,8 @@
 {
-  "name": "skynet-webportal",
-  "description": "Sia Skynet",
+  "name": "scprime-publicwebportal",
+  "description": "Scprime public portal",
   "version": "1.0.0",
-  "author": "Nebulous",
+  "author": "Scprime corp",
   "dependencies": {
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
@@ -44,9 +44,9 @@
     "prettier": "^2.0.1"
   },
   "keywords": [
-    "sia",
-    "skynet",
-    "nebulous",
+    "scprime",
+    "publicportal",
+    "Scprime corp",
     "blockchain",
     "decentralized",
     "cloud storage"
