@@ -28,12 +28,12 @@ export default function Deco5(props) {
           d="M9.782 36.669l-.064-.188c-1.961-6.242 10.014-16.204 26.97-22.375 17.126-6.234 32.847-6.238 35.114-.01L88.219 59.2c2.266 6.228-9.78 16.33-26.906 22.563-17.126 6.233-32.847 6.238-35.114.01L9.782 36.67z"
         />
         <path
-          fill="#57B560"
+          fill="#2074ee"
           d="M9.782 36.669c1.287 3.536 6.911 5.063 14.667 4.581l16.417 45.105c-7.756.482-13.38-1.045-14.667-4.58L9.782 36.668z"
         />
         <g strokeLinejoin="round" transform="rotate(-20 75.593 .85)">
-          <use fill="#000" filter="url(#prefix__a)" xlinkHref="#prefix__b" />
-          <use stroke="#57B560" strokeWidth={2} xlinkHref="#prefix__b" />
+          <use fill="#2074ee" filter="url(#prefix__a)" xlinkHref="#prefix__b" />
+          <use stroke="#2074ee" strokeWidth={2} xlinkHref="#prefix__b" />
         </g>
       </g>
     </svg>

@@ -6,7 +6,7 @@ export default function FileError(props) {
       <g fill="none" fillRule="evenodd">
         <path
           d="M3 1h18l16 16v22a2 2 0 01-2 2H3a2 2 0 01-2-2V3a2 2 0 012-2zm15 21v7m0 2v2"
-          stroke="#E65C5C"
+          stroke="#2074ee"
           strokeWidth={2}
           strokeLinejoin="round"
         />

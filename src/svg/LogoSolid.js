@@ -3,12 +3,16 @@ import PropTypes from "prop-types";
 
 export default function LogoSolid({ className }) {
   return (
-    <svg className={className} width={32} height={32} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M26 26v-9.849C26 10.623 21.578 6.027 16.05 6 10.497 5.973 5.973 10.496 6 16.05 6.028 21.578 10.623 26 16.151 26H26zM16 0c8.837 0 16 7.163 16 16v16H16C7.163 32 0 24.837 0 16S7.163 0 16 0z"
-        fill="currentColor"
-        fillRule="nonzero"
-      />
+    <svg className={className} width={0} height={0} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+    <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+    fill="#2074ee" stroke="#2074ee">
+
+    <path d="M82 286 l-37 -34 -3 -126 -4 -126 32 0 c31 0 32 1 28 35 l-4 35 49 0
+c85 0 137 49 137 130 0 36 -6 48 -39 81 -32 33 -45 39 -80 39 -33 0 -49 -7
+-79 -34z"/>
+
+    </g>
     </svg>
   );
 }
