@@ -4,7 +4,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import classNames from "classnames";
 import "./Mailing.scss";
 
-const url = "https://tech.us11.list-manage.com/subscribe/post?u=5df238d9e852f9801b5f2c92e&amp;id=ab6bea4cc2";
+const url = "#";
 
 const CustomForm = ({ status, message, onValidated, light, id }) => {
   let email, user;
@@ -32,7 +32,7 @@ const CustomForm = ({ status, message, onValidated, light, id }) => {
       />
       <div className="home-form-stay-existing">
         <input ref={(node) => (user = node)} type="checkbox" id={checkboxId} />
-        <label htmlFor={checkboxId}>I have previous experience using Sia</label>
+        <label htmlFor={checkboxId}>I have previous experience using ScPrime</label>
       </div>
       <button className="button" onClick={submit} id={submitId}>
         Get Updates
