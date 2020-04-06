@@ -29,7 +29,7 @@ export default class HomeStay extends Component {
                 <h2>
                   Stay up to date with
                   <br />
-                  <strong>Skynet updates</strong>
+                  <strong>Public Portal updates</strong>
                 </h2>
               </Fade>
             </header>
@@ -43,9 +43,9 @@ export default class HomeStay extends Component {
               <li>
                 <SocialLink
                   icon="github"
-                  url="https://github.com/NebulousLabs/skynet-webportal"
+                  url="https://github.com/scpcorp/skynet-webportal"
                   greenText="View project on Github"
-                  title={<strong>/Skynet-Webportal</strong>}
+                  title={<strong>/Public-Webportal</strong>}
                 />
               </li>
             </Fade>
@@ -53,9 +53,9 @@ export default class HomeStay extends Component {
               <li>
                 <SocialLink
                   icon="discord"
-                  url="https://discord.gg/sia"
+                  url="https://discord.gg/VKkHeBc"
                   greenText="View project on Discord"
-                  title={<strong>/Sia</strong>}
+                  title={<strong>/ScPrime</strong>}
                 />
               </li>
             </Fade>
@@ -63,9 +63,9 @@ export default class HomeStay extends Component {
               <li>
                 <SocialLink
                   icon="twitter"
-                  url="https://twitter.com/SiaTechHQ"
+                  url="https://twitter.com/prime_sia"
                   greenText="View project on Twitter"
-                  title={<strong>@SiaTechHQ</strong>}
+                  title={<strong>@ScPrimeTech</strong>}
                 />
               </li>
             </Fade>
