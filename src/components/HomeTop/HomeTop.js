@@ -8,15 +8,11 @@ export default function HomeTop() {
   return (
     <Reveal effect="active">
       <div className="home-top">
-        <img src={logo} alt="Skynet logo" className="logo" />
+        <img src={logo} alt="ScPrime logo" className="logo" />
         <Skynet className="wordmark" />
+        <h1 className="fadeInUp delay2">Public Web Storage, Better</h1>
+        <h2 className="fadeInUp delay2">Web portals are next gen ScPrime Public Cloudstorage !</h2>
 
-        <h1 className="fadeInUp delay2">Build a Free Internet.</h1>
-
-        <p className="fadeInUp delay3">
-          The decentralized CDN and file sharing platform for devs. Skynet is the storage foundation for a Free
-          Internet!
-        </p>
 
         <Deco1 className="deco-1 fadeInUp delay6" />
         <Deco2 className="deco-2 fadeInUp delay6" />
