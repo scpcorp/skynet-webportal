@@ -21,7 +21,7 @@ export default function HomeSamples() {
       <Fade duration={700} distance="40px" bottom>
         <p>Above are some code snippets for uploading and retrieving data.</p>
         <p>
-          Skynet includes{" "}
+          ScPrime includes{" "}
           <a
             href="https://support.siasky.net/article/hrshqsn9wz-integrating-skynet"
             target="_blank"
@@ -43,7 +43,7 @@ export default function HomeSamples() {
           >
             guide
           </a>{" "}
-          to setup a Sia Node.
+          to setup a ScPrime Node.
         </p>
       </Fade>
 
