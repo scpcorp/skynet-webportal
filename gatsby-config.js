@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Skynet`,
-        short_name: `Skynet`,
+        name: `Public Portal`,
+        short_name: `scpportal`,
         start_url: `/`,
         background_color: `#f1f7f2`,
         theme_color: `#f1f7f2`,
