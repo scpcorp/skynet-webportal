@@ -13,8 +13,8 @@ const STATS_MAP = [
   { name: "TB Used", key: AVAILABLE_STATS.STORAGE_USED_TB },
   { name: "TB Capacity", key: AVAILABLE_STATS.NETWORK_CAPACITY_TB },
   { name: "Hosts", key: AVAILABLE_STATS.ONLINE_HOSTS_COUNT },
-  { name: "Storage/TB", key: AVAILABLE_STATS.STORAGE_COST_USD, currency: true },
-  { name: "Bandwidth/TB", key: AVAILABLE_STATS.BANDWIDTH_DOWN_COST_USD, currency: true },
+
+
 ];
 
 export default function HomeNetwork() {
@@ -41,7 +41,7 @@ export default function HomeNetwork() {
         </Fade>
         <Fade duration={700} distance="40px" bottom>
           <h2>
-            Sia
+            Scprime
             <br />
             <strong>Network</strong>
           </h2>
@@ -68,9 +68,9 @@ export default function HomeNetwork() {
               <Deco8 className="deco-8" />
             </div>
             <div className="home-network-stats-provider">
-              stats provided by{" "}
+            {" "}
               <a href="https://siastats.info" target="_blank" rel="noopener noreferrer">
-                siastats.info
+
               </a>
             </div>
           </React.Fragment>
@@ -81,51 +81,44 @@ export default function HomeNetwork() {
         <div className="home-network-column left">
           <Fade duration={700} distance="40px" bottom>
             <p>
-              <strong>Skynet Webportals</strong> are low cost servers that sit between Skynet and everyday users,
-              enabling them to access Skynet content without needing to operate any special software. As Skylinks are
+              <strong>ScPrime Public Webportals</strong> are low cost servers that sit between everyday users,
+              enabling them to access Public Portals content without needing to operate any special software. As Publiclink are
               generated, they can be shared with anyone to retrieve data from any Webportal. The original uploader does
-              not need to stay online in order for the file to remain available. The Sia network serves as the backend
-              storage layer for Skynet and handles all of the pinning, guaranteeing both high speeds and excellent
+              not need to stay online in order for the file to remain available. The ScPrime network serves as the backend
+              storage layer for Publc Portals and handles all of the pinning, guaranteeing both high speeds and excellent
               uptime.
             </p>
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
             <p>
-              <strong>Sia</strong> is the leading decentralized cloud storage platform. No signups, no servers, no
-              trusted third parties. Sia leverages blockchain technology to create a data storage marketplace that is
+              <strong>ScPrime</strong> is the decentralized cloud storage platform. No signups, no servers, no
+              trusted third parties. Scprime leverages blockchain technology to create a data storage marketplace that is
               more robust and more affordable than traditional cloud storage providers.
             </p>
 
             <p>
-              <a className="more" href="https://sia.tech/" target="_blank" rel="noopener noreferrer">
-                Learn more about Sia
+              <a className="more" href="https://scpri.me" target="_blank" rel="noopener noreferrer">
+                Learn more about Scprime
               </a>
             </p>
           </Fade>
         </div>
         <div className="home-network-column">
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How do I use Skynet?">
+            <FAQ title="How do I use Public Portals?">
               <p>
-                Anyone can access files that have been uploaded to Skynet as long as they possess the corresponding
-                Skylinks. You can use any Webportal to download files!
-                <a
-                  href="https://skynet.helpdocs.io/article/3p9z5g9s0e-skynet-how-to"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more read-more"
-                >
-                  read more
-                </a>
+                Anyone can access files that have been uploaded to Public Portal as long as they possess the corresponding
+                Publiclinks. You can use any Webportal to download files!
+
               </p>
             </FAQ>
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How do I integrate Skynet into my app?">
+            <FAQ title="How do I integrate Public Portals into my app?">
               <p>
-                Applications can be deployed in under a minute and be immediately available globally. Skynet includes an
+                Applications can be deployed in under a minute and be immediately available globally. Public Portal includes an
                 API and SDKs which integrate seamlessly with existing applications.
                 <a
                   href="https://skynet.helpdocs.io/article/hrshqsn9wz-integrating-skynet"
@@ -140,10 +133,10 @@ export default function HomeNetwork() {
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How fast is Skynet?">
+            <FAQ title="How fast are Public Portals?">
               <p>
-                Skynet&apos;s speeds rival centralized providers and surpass all decentralized offerings. A typical
-                Skynet download starts in under 500 ms and can stream at rates as high as 1 Gbps!
+                &apos;s speeds rival centralized providers and surpass all decentralized offerings. A typical
+                Public Portal download starts in under 500 ms and can stream at rates as high as 1 Gbps!
                 <a
                   href="https://skynet.helpdocs.io/article/430teoxgqc-skynet-speed"
                   target="_blank"
@@ -166,7 +159,7 @@ export default function HomeNetwork() {
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <a className="more more-faq" href="https://support.siasky.net" target="_blank" rel="noopener noreferrer">
+            <a className="more more-faq" href="https://scpri.me" target="_blank" rel="noopener noreferrer">
               View more FAQ
             </a>
           </Fade>

@@ -58,7 +58,7 @@ async function getStorageStats() {
   // difficulty: 3501953420754597000, coin_supply: 43638591164, coin_price_USD: 0.003,
   // market_cap_USD: 130915773, used_storage_TB: 725.26, network_capacity_TB: 2270.96,
   // online_hosts: 360, active_contracts: 62997 }
-  const { data } = await axios.get("https://siastats.info/dbs/network_status.json");
+  const { data } = await axios.get("https://vladarmaster.github.io/Scprimec/base.json");
 
   return {
     [AVAILABLE_STATS.ONLINE_HOSTS_COUNT]: data.online_hosts,
