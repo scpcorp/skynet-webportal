@@ -19,37 +19,27 @@ export default function Footer() {
 
           <div className="footer-column">
             <Fade duration={700} distance="40px" bottom>
-              <h2>Skynet Webportals</h2>
+              <h2>Public Webportals</h2>
 
               <ul>
                 <li>
-                  <a href="https://skydrain.net" target="_blank" rel="noopener noreferrer">
-                    skydrain.net
+                  <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
+                    scprimegivename.net
                   </a>
                 </li>
                 <li>
-                  <a href="https://sialoop.net" target="_blank" rel="noopener noreferrer">
-                    sialoop.net
+                  <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
+                    scprimegivename.net
                   </a>
                 </li>
                 <li>
-                  <a href="https://skynet.luxor.tech" target="_blank" rel="noopener noreferrer">
-                    skynet.luxor.tech
+                  <a href="https://givename.tech" target="_blank" rel="noopener noreferrer">
+                    scprimegivename.net
                   </a>
                 </li>
                 <li>
-                  <a href="https://skynet.tutemwesi.com" target="_blank" rel="noopener noreferrer">
-                    skynet.tutemwesi.com
-                  </a>
-                </li>
-                <li>
-                  <a href="https://siacdn.com" target="_blank" rel="noopener noreferrer">
-                    siacdn.com
-                  </a>
-                </li>
-                <li>
-                  <a href="https://vault.lightspeedhosting.com" target="_blank" rel="noopener noreferrer">
-                    vault.lightspeedhosting.com
+                  <a href="https://givename.com" target="_blank" rel="noopener noreferrer">
+                  scprimegivename.net
                   </a>
                 </li>
               </ul>
@@ -62,18 +52,13 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href="https://blog.sia.tech/skynet-bdf0209d6d34" target="_blank" rel="noopener noreferrer">
-                    Skynet Overview
+                  <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
+                    Public Portals Overview
                   </a>
-                </li>
-                <li>
-                  <a href="https://sia.tech/docs/#skynet" target="_blank" rel="noopener noreferrer">
-                    API Docs
-                  </a>
-                </li>
+                </li>      
                 <li>
                   <a
-                    href="https://github.com/NebulousLabs/skynet-webportal/blob/master/setup-scripts/README.md"
+                    href="https://github.com/scpcorp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -82,11 +67,11 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://support.siasky.net/article/vmmzyes1uy-skynet-sia-set-up"
+                    href="https://scpri.me/software/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Sia Node Setup
+                    ScPrime Node Setup
                   </a>
                 </li>
               </ul>
@@ -98,25 +83,21 @@ export default function Footer() {
               <h2>Social</h2>
               <ul>
                 <li>
-                  <a href="https://twitter.com/siatechhq" target="_blank" rel="noopener noreferrer">
+                  <a href="https://twitter.com/prime_sia" target="_blank" rel="noopener noreferrer">
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/sia" target="_blank" rel="noopener noreferrer">
+                  <a href="https://discord.gg/XxTjjCw" target="_blank" rel="noopener noreferrer">
                     Discord
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.reddit.com/r/siacoin" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.reddit.com/r/SiaPrime/" target="_blank" rel="noopener noreferrer">
                     Reddit
                   </a>
                 </li>
-                <li>
-                  <a href="https://blog.sia.tech" target="_blank" rel="noopener noreferrer">
-                    Blog
-                  </a>
-                </li>
+
               </ul>
             </Fade>
           </div>
@@ -127,37 +108,22 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href="https://sia.tech/" target="_blank" rel="noopener noreferrer">
-                    Sia.tech
+                  <a href="https://scpri.me" target="_blank" rel="noopener noreferrer">
+                    ScPrime.tech
                   </a>
                 </li>
                 <li>
-                  <a href="https://jobs.lever.co/nebulous" target="_blank" rel="noopener noreferrer">
+                  <a href="https://scpri.me/contact/" target="_blank" rel="noopener noreferrer">
                     Jobs
                   </a>
                 </li>
-                <li>
-                  <a href="https://support.siasky.net" target="_blank" rel="noopener noreferrer">
-                    Support
-                  </a>
-                </li>
-                <li>
-                  <a href="terms.pdf" target="_blank" rel="noopener noreferrer">
-                    Terms
-                  </a>
-                </li>
-                <li>
-                  <a href="privacy.pdf" target="_blank" rel="noopener noreferrer">
-                    Privacy
-                  </a>
-                </li>
-              </ul>
+                </ul>
             </Fade>
           </div>
 
           <div className="footer-column">
             <Fade duration={700} distance="40px" bottom>
-              <h2>Stay up to date with Skynet updates</h2>
+              <h2>Stay up to date with Public Webportal Portal updates</h2>
               <Mailing id="mailing-bottom" light />
             </Fade>
           </div>
