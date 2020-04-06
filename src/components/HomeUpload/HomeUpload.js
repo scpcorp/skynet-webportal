@@ -105,7 +105,7 @@ export default function HomeUpload() {
   const handleSkylink = (event) => {
     event.preventDefault();
 
-    const skylink = event.target.skylink.value.replace("sia://", "");
+    const skylink = event.target.skylink.value.replace("scp://", "");
 
     if (skylink.match(/^[a-zA-Z0-9_-]{46}$/)) {
       window.open(skylink, "_blank");
@@ -126,7 +126,7 @@ export default function HomeUpload() {
               >
                 <span className="home-upload-text">
                   <h3>Upload your {directoryMode ? "Directory" : "Files"}</h3>
-                  Drop your {directoryMode ? "directory" : "files"} here to pin to Skynet
+                  Drop your {directoryMode ? "directory" : "files"} here to pin to Public Portal
                 </span>
                 <Button iconLeft>
                   <Folder />
@@ -160,11 +160,11 @@ export default function HomeUpload() {
 
             <div className="home-upload-retrieve">
               <div className="home-upload-text">
-                <h3 id="skylink-retrieve-title">Have a Skylink?</h3>
+                <h3 id="skylink-retrieve-title">Have a Public link?</h3>
                 <p>Paste the link to retrieve your file</p>
 
                 <form className="home-upload-retrieve-form" onSubmit={handleSkylink}>
-                  <input name="skylink" type="text" placeholder="sia://" aria-labelledby="skylink-retrieve-title" />
+                  <input name="skylink" type="text" placeholder="scp://" aria-labelledby="skylink-retrieve-title" />
                   <button type="submit" aria-label="Retrieve file">
                     <DownArrow />
                   </button>
@@ -183,8 +183,8 @@ export default function HomeUpload() {
         </div>
 
         <p className="bottom-text fadeInUp delay5">
-          Upon uploading a file, Skynet generates a 46 byte link called a <strong>Skylink</strong>. This link can then
-          be shared with anyone to retrieve the file on any Skynet Webportal.
+          Upon uploading a file, Public Portal generates a 46 byte link called a <strong>Public Link</strong>. This link can then
+          be shared with anyone to retrieve the file on any ScPrime Public Webportal.
         </p>
 
         <Deco3 className="deco-3 fadeInUp delay6" />
