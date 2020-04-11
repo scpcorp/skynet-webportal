@@ -12,12 +12,6 @@ export default class HomeStay extends Component {
         <header className="home-stay-header">
           <Fade duration={700} distance="40px" bottom>
             <div className="home-stay-divider">
-              <CircleIcon>
-                <Pyramid />
-              </CircleIcon>
-              <SmallOrb />
-              <div className="divider" />
-              <div className="small-divider" />
             </div>
           </Fade>
         </header>

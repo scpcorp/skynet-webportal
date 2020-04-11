@@ -4,7 +4,7 @@
   padding-top: 80px;
 
   @media (min-width: $largebp) {
-    padding-top: 150px;
+    padding-top: 20px;
   }
 }
 
@@ -17,7 +17,7 @@
     margin-bottom: 50px;
 
     @media (min-width: $largebp) {
-      margin-bottom: 70px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -25,29 +25,13 @@
 .home-built-divider {
   display: inline-flex;
   align-items: center;
-  margin: 0 auto 32px;
+  margin: 0 auto 320px;
 
   @media (min-width: $largebp) {
-    margin-bottom: 40px;
+    margin-bottom: 1px;
   }
 
-  .circle-icon {
-    margin: 0 14px;
-  }
 
-  .small-orb:first-of-type {
-    margin-left: 14px;
-  }
 
-  .small-orb:last-of-type {
-    margin-right: 14px;
-  }
 
-  .small-divider:first-of-type {
-    margin-right: 8px;
-  }
-
-  .small-divider:last-of-type {
-    margin-left: 8px;
-  }
 }

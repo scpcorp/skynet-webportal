@@ -7,25 +7,13 @@
   }
 }
 
-.home-stay-divider {
-  display: flex;
-  align-items: center;
-  color: $green;
-  margin-bottom: 32px;
-
-  @media (min-width: $largebp) {
-    margin-bottom: 40px;
-  }
 
   .circle-icon {
     box-shadow: 0 0 8px 0 rgba(87, 181, 96, 0.3);
     margin-right: 14px;
   }
 
-  .divider {
-    margin: 0 8px 0 14px;
-  }
-}
+
 
 .home-stay-flex {
   @media (min-width: $largebp) {

@@ -35,8 +35,7 @@ export default function HomeNetwork() {
               <LogoSolid />
             </CircleIcon>
             <SmallOrb />
-            <div className="divider"></div>
-            <div className="small-divider"></div>
+          
           </div>
         </Fade>
         <Fade duration={700} distance="40px" bottom>
@@ -81,22 +80,12 @@ export default function HomeNetwork() {
         <div className="home-network-column left">
           <Fade duration={700} distance="40px" bottom>
             <p>
-              <strong>ScPrime Public Webportals</strong> are low cost servers that sit between everyday users,
-              enabling them to access Public Portals content without needing to operate any special software. As Publiclink are
-              generated, they can be shared with anyone to retrieve data from any Webportal. The original uploader does
-              not need to stay online in order for the file to remain available. The ScPrime network serves as the backend
-              storage layer for Publc Portals and handles all of the pinning, guaranteeing both high speeds and excellent
-              uptime.
+              <strong>ScPrime Public Access portals</strong> provide access to the SCP network without installing the current open source wallet software. Upload links can be shared with anyone to retrieve data from any portal. Our product model is building a truly distributed S3-compatible cloud storage for Enterprise, yet a vibrant and active community also uses the network for backup and inexpensive storage. Please follow any specific Terms of Service as posted by portal operators.
+
             </p>
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <p>
-              <strong>ScPrime</strong> is the decentralized cloud storage platform. No signups, no servers, no
-              trusted third parties. Scprime leverages blockchain technology to create a data storage marketplace that is
-              more robust and more affordable than traditional cloud storage providers.
-            </p>
-
             <p>
               <a className="more" href="https://scpri.me" target="_blank" rel="noopener noreferrer">
                 Learn more about Scprime
@@ -106,62 +95,23 @@ export default function HomeNetwork() {
         </div>
         <div className="home-network-column">
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How do I use Public Portals?">
-              <p>
-                Anyone can access files that have been uploaded to Public Portal as long as they possess the corresponding
-                Publiclinks. You can use any Webportal to download files!
 
-              </p>
-            </FAQ>
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How do I integrate Public Portals into my app?">
-              <p>
-                Applications can be deployed in under a minute and be immediately available globally. Public Portal includes an
-                API and SDKs which integrate seamlessly with existing applications.
-                <a
-                  href="https://skynet.helpdocs.io/article/hrshqsn9wz-integrating-skynet"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more read-more"
-                >
-                  read more
-                </a>
-              </p>
-            </FAQ>
+
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How fast are Public Portals?">
-              <p>
-                &apos;s speeds rival centralized providers and surpass all decentralized offerings. A typical
-                Public Portal download starts in under 500 ms and can stream at rates as high as 1 Gbps!
-                <a
-                  href="https://skynet.helpdocs.io/article/430teoxgqc-skynet-speed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more read-more"
-                >
-                  read more
-                </a>
-              </p>
-            </FAQ>
+
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <FAQ title="How much does it cost to run a Webportal?">
-              <p>
-                Storage costs 10x lower than centralized providers and bandwidth costs are 100x lower – without
-                sacrificing performance or reliability.
-              </p>
-            </FAQ>
+
           </Fade>
 
           <Fade duration={700} distance="40px" bottom>
-            <a className="more more-faq" href="https://scpri.me" target="_blank" rel="noopener noreferrer">
-              View more FAQ
-            </a>
+
           </Fade>
         </div>
       </div>

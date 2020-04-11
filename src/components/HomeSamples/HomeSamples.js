@@ -18,41 +18,12 @@ const samples = [
 export default function HomeSamples() {
   return (
     <div className="home-samples">
-      <Fade duration={700} distance="40px" bottom>
-        <p>Above are some code snippets for uploading and retrieving data.</p>
-        <p>
-          ScPrime includes{" "}
-          <a
-            href="https://support.siasky.net/article/hrshqsn9wz-integrating-skynet"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            SDKs
-          </a>{" "}
-          for popular programming languages and{" "}
-          <a href="https://sia.tech/docs/#skynet" target="_blank" rel="noopener noreferrer" className="link">
-            APIs
-          </a>{" "}
-          that integrate seamlessly with your existing apps. You can follow this{" "}
-          <a
-            href="https://support.siasky.net/article/vmmzyes1uy-skynet-sia-set-up"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            guide
-          </a>{" "}
-          to setup a ScPrime Node.
-        </p>
+      <Fade duration={700} distance="20px" bottom>
+
       </Fade>
 
       <Reveal effect="active">
-        <div className="home-samples-samples">
-          {samples.map((sample, i) => (
-            <Sample className={`fadeInUp delay${i + 1}`} key={`${i}-${sample.url}`} {...sample} />
-          ))}
-        </div>
+
       </Reveal>
     </div>
   );
