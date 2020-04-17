@@ -64,7 +64,7 @@ export default function HomeUpload() {
     };
 
     const upload = async (formData, directory, file) => {
-      const uploadUrl = `${apiUrl}/skynet/skyfile/${directory ? `?filename=${encodeURIComponent(directory)}` : ""}`;
+      const uploadUrl = `${apiUrl}/pubaccess/publink/${directory ? `?filename=${encodeURIComponent(directory)}` : ""}`;
       const { data } = await axios.post(uploadUrl, formData, {
         onUploadProgress: ({ loaded, total }) => {
           const progress = loaded / total;
@@ -91,9 +91,9 @@ export default function HomeUpload() {
           formData.append("file", file);
         }
 
-        const { skylink } = await upload(formData, directoryMode && file.name, file);
+        const { publink } = await upload(formData, directoryMode && file.name, file);
 
-        onFileStateChange(file, { status: "complete", url: `${apiUrl}/${skylink}` });
+        onFileStateChange(file, { status: "complete", url: `${apiUrl}/${publink}` });
       } catch (error) {
         onFileStateChange(file, { status: "error" });
       }
@@ -102,13 +102,13 @@ export default function HomeUpload() {
 
   const { getRootProps, getInputProps, isDragActive, inputRef } = useDropzone({ onDrop: handleDrop });
 
-  const handleSkylink = (event) => {
+  const handlePublink = (event) => {
     event.preventDefault();
 
-    const skylink = event.target.skylink.value.replace("scp://", "");
+    const publink = event.target.publink.value.replace("scp://", "");
 
-    if (skylink.match(/^[a-zA-Z0-9_-]{46}$/)) {
-      window.open(skylink, "_blank");
+    if (publink.match(/^[a-zA-Z0-9_-]{46}$/)) {
+      window.open(publink, "_blank");
     }
   };
 
@@ -160,11 +160,11 @@ export default function HomeUpload() {
 
             <div className="home-upload-retrieve">
               <div className="home-upload-text">
-                <h3 id="skylink-retrieve-title">Have a Public link?</h3>
+                <h3 id="publink-retrieve-title">Have a Public link?</h3>
                 <p>Paste the link to retrieve your file</p>
 
-                <form className="home-upload-retrieve-form" onSubmit={handleSkylink}>
-                  <input name="skylink" type="text" placeholder="scp://" aria-labelledby="skylink-retrieve-title" />
+                <form className="home-upload-retrieve-form" onSubmit={handlePublink}>
+                  <input name="publink" type="text" placeholder="scp://" aria-labelledby="publink-retrieve-title" />
                   <button type="submit" aria-label="Retrieve file">
                     <DownArrow />
                   </button>
