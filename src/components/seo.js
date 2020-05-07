@@ -7,7 +7,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from "gatsby";
 
 function SEO({ lang, meta }) {
@@ -19,6 +19,7 @@ function SEO({ lang, meta }) {
             title
             author
             description
+            image
           }
         }
       }
@@ -47,6 +48,10 @@ function SEO({ lang, meta }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.image,
         },
         {
           name: `twitter:card`,
