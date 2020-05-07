@@ -64,7 +64,7 @@ export default function HomeUpload() {
     };
 
     const upload = async (formData, directory, file) => {
-      const uploadUrl = `${apiUrl}/pubaccess/publink/${directory ? `?filename=${encodeURIComponent(directory)}` : ""}`;
+      const uploadUrl = `${apiUrl}/pubaccess/pubfile/${directory ? `?filename=${encodeURIComponent(directory)}` : ""}`;
       const { data } = await axios.post(uploadUrl, formData, {
         onUploadProgress: ({ loaded, total }) => {
           const progress = loaded / total;
