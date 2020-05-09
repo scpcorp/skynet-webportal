@@ -19,7 +19,6 @@ function SEO({ lang, meta }) {
             title
             author
             description
-            image
           }
         }
       }
@@ -48,10 +47,6 @@ function SEO({ lang, meta }) {
         {
           property: `og:type`,
           content: `website`,
-        },
-        {
-          property: `og:image`,
-          content: site.siteMetadata.image,
         },
         {
           name: `twitter:card`,
