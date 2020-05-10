@@ -19,27 +19,27 @@ export default function Footer() {
 
           <div className="footer-column">
             <Fade duration={700} distance="40px" bottom>
-              <h2>Public Webportals</h2>
+              <h2>Portal List</h2>
 
               <ul>
                 <li>
                   <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
-                    scprimegivename.net
+                    portal_link.net
                   </a>
                 </li>
                 <li>
                   <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
-                    scprimegivename.net
+                    portal_link.net
                   </a>
                 </li>
                 <li>
                   <a href="https://givename.tech" target="_blank" rel="noopener noreferrer">
-                    scprimegivename.net
+                    portal_link.net
                   </a>
                 </li>
                 <li>
                   <a href="https://givename.com" target="_blank" rel="noopener noreferrer">
-                  scprimegivename.net
+                  portal_link.net
                   </a>
                 </li>
               </ul>
@@ -48,17 +48,17 @@ export default function Footer() {
 
           <div className="footer-column">
             <Fade duration={700} distance="40px" bottom>
-              <h2>For Developers</h2>
+              <h2>Developers</h2>
 
               <ul>
                 <li>
                   <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
-                    Public Portals Overview
+                    Overview
                   </a>
                 </li>      
                 <li>
                   <a
-                    href="https://github.com/scpcorp"
+                    href="https://github.com/scpcorp/skynet-webportal"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -71,7 +71,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    ScPrime Node Setup
+                    Storage Provider Setup
                   </a>
                 </li>
               </ul>
@@ -92,12 +92,6 @@ export default function Footer() {
                     Discord
                   </a>
                 </li>
-                <li>
-                  <a href="https://www.reddit.com/r/SiaPrime/" target="_blank" rel="noopener noreferrer">
-                    Reddit
-                  </a>
-                </li>
-
               </ul>
             </Fade>
           </div>
@@ -109,12 +103,7 @@ export default function Footer() {
               <ul>
                 <li>
                   <a href="https://scpri.me" target="_blank" rel="noopener noreferrer">
-                    ScPrime.tech
-                  </a>
-                </li>
-                <li>
-                  <a href="https://scpri.me/contact/" target="_blank" rel="noopener noreferrer">
-                    Jobs
+                    ScPrime
                   </a>
                 </li>
                 </ul>
@@ -123,7 +112,7 @@ export default function Footer() {
 
           <div className="footer-column">
             <Fade duration={700} distance="40px" bottom>
-              <h2>Stay up to date with Public Webportal Portal updates</h2>
+              <h2>Stay up to date</h2>
               <Mailing id="mailing-bottom" light />
             </Fade>
           </div>
