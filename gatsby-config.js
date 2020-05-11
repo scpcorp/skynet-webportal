@@ -3,7 +3,7 @@ module.exports = {
     title: `Public Portals`,
     description: `Public Portals are a decentralized file sharing and content distribution protocol.`,
     author: `scpcorp`,
-    siteUrl: `https://scprime.hashpool.eu`,
+    siteUrl: `https://scp.techandsupply.ca`,
     image: `https://scprime.hashpool.eu/icons/icon-512x512.png`,
   },
   plugins: [

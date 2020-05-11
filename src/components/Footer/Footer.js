@@ -23,23 +23,18 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
-                    scprimegivename.net
+                  <a href="https://scprime.hashpool.eu" target="_blank" rel="noopener noreferrer">
+                    scprime.hashpool.eu
                   </a>
                 </li>
                 <li>
-                  <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
-                    scprimegivename.net
+                  <a href="https://scp.techandsupply.ca" target="_blank" rel="noopener noreferrer">
+                    scp.techandsupply.ca
                   </a>
                 </li>
                 <li>
-                  <a href="https://givename.tech" target="_blank" rel="noopener noreferrer">
-                    scprimegivename.net
-                  </a>
-                </li>
-                <li>
-                  <a href="https://givename.com" target="_blank" rel="noopener noreferrer">
-                  scprimegivename.net
+                  <a href="https://floathomeliving.com/#portal" target="_blank" rel="noopener noreferrer">
+                    floathomeliving.com
                   </a>
                 </li>
               </ul>
@@ -52,7 +47,7 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href="https://givename.net" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/scpcorp/skynet-webportal/blob/master/README.md" target="_blank" rel="noopener noreferrer">
                     Public Portals Overview
                   </a>
                 </li>      
