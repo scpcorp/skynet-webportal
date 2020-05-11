@@ -6,26 +6,25 @@
   "dependencies": {
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
-    "gatsby": "^2.20.2",
-    "gatsby-image": "^2.3.0",
-    "gatsby-plugin-manifest": "^2.2.48",
-    "gatsby-plugin-matomo": "^0.8.2",
-    "gatsby-plugin-react-helmet": "^3.2.0",
+    "gatsby": "^2.20.29",
+    "gatsby-image": "^2.3.4",
+    "gatsby-plugin-manifest": "^2.3.6",
+    "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sass": "^2.2.0",
-    "gatsby-plugin-sharp": "^2.4.13",
-    "gatsby-source-filesystem": "^2.2.1",
-    "gatsby-transformer-sharp": "^2.4.1",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-transformer-sharp": "^2.4.6",
     "jsonp": "^0.2.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "path-browserify": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-countup": "^4.3.3",
-    "react-dom": "^16.13.0",
-    "react-dropzone": "^10.2.1",
-    "react-helmet": "^5.2.1",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-helmet": "^6.0.0",
     "react-mailchimp-form": "^1.0.2",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-reveal": "^1.2.2",
@@ -33,15 +32,15 @@
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
-    "cypress": "^4.2.0",
-    "cypress-file-upload": "^3.5.3",
+    "cypress": "^4.4.1",
+    "cypress-file-upload": "^4.0.6",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
-    "prettier": "^2.0.1"
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "prettier": "^2.0.5"
   },
   "keywords": [
     "scprime",
@@ -74,9 +73,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NebulousLabs/skynet-webportal"
+    "url": "https://github.com/scpcorp/skynet-webportal"
   },
   "bugs": {
-    "url": "https://github.com/NebulousLabs/skynet-webportal/issues"
+    "url": "https://github.com/scpcorp/skynet-webportal/issues"
   }
 }
