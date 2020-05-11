@@ -114,7 +114,7 @@ export default function HomeUpload() {
 
   return (
     <Reveal effect="active">
-      <div className="home-upload">
+      <div id="home-upload" className="home-upload">
         <div className="home-upload-white fadeInUp delay4">
           <div className="home-upload-split">
             <div className="home-upload-box ">
