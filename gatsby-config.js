@@ -4,6 +4,7 @@ module.exports = {
     description: `Public Portals are a decentralized file sharing and content distribution protocol.`,
     author: `scpcorp`,
     siteUrl: `https://scp.techandsupply.ca`,
+    image: `https://scprime.hashpool.eu/icons/icon-512x512.png`,
   },
   plugins: [
     `gatsby-plugin-sass`,
