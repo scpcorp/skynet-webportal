@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import discord, sys, traceback, io
-from bot_utils import setup, send_msg, sc_precision
+from bot_utils import setup, send_msg, scp_precision
 
 from datetime import datetime, timedelta
 from subprocess import Popen, PIPE
