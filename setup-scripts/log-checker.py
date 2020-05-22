@@ -7,13 +7,13 @@ from datetime import datetime, timedelta
 from subprocess import Popen, PIPE
 
 """
-log-checker checks journal logs for siad.
+log-checker checks journal logs for spd.
 
 Arguments:
     1. path to a .env file (default is none so env variables can already be
     preset)
 
-    2. systemd service name (default: "siad")
+    2. systemd service name (default: "spd")
 
     3. number of hours to look back in log (used as --since value in journalctl
     command) (default: 1 hour)
@@ -32,7 +32,7 @@ async def on_ready():
 
 
 async def run_checks():
-    print("Running Skynet portal log checks")
+    print("Running Public Portal log checks")
     try:
         await check_journal()
 
@@ -45,12 +45,12 @@ async def run_checks():
 async def check_journal():
     print("\nChecking journal...")
 
-    # Get the systemd service name as an argument, or use "siad" as default.
-    service_name = "siad"
+    # Get the systemd service name as an argument, or use "spd" as default.
+    service_name = "spd"
     if len(sys.argv) > 2:
         service_name = sys.argv[2]
 
-    # Get the systemd service name as an argument, or use "siad" as default.
+    # Get the systemd service name as an argument, or use "spd" as default.
     check_interval = DEFAULT_CHECK_INTERVAL
     if len(sys.argv) > 3:
         check_interval = timedelta(hours=int(sys.argv[3]))
