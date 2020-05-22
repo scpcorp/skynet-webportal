@@ -6,10 +6,10 @@ from pathlib import Path
 
 import urllib, json, os, traceback, discord, sys
 
-# sc_precision is the number of hastings per siacoin
-sc_precision = 10 ** 24
+# scp_precision is the number of hastings per scp
+scp_precision = 10 ** 24
 
-channel_name = "skynet-portal-health-check"
+channel_name = "public-portal-health-check"
 
 # Environment variable globals
 api_endpoint, port, portal_name, bot_token, password = None, None, None, None, None
@@ -33,12 +33,12 @@ def setup():
     global port
     port = os.getenv("API_PORT")
     if not port:
-        port = "9980"
+        port = "4280"
 
     global api_endpoint
     api_endpoint = "http://localhost:{}".format(port)
 
-    siad.initialize()
+    spd.initialize()
 
     global setup_done
     setup_done = True
@@ -68,8 +68,8 @@ async def send_msg(client, msg, force_notify=False, file=None):
     await chan.send(msg, file=file)
 
 
-#siad class provides wrappers for the necessary siad commands.
-class siad:
+#spd class provides wrappers for the necessary spd commands.
+class spd:
     # initializes values for using the API (password and
     # user-agent) so that all calls to urllib.request.urlopen have these set.
     @staticmethod
@@ -77,12 +77,12 @@ class siad:
         # Setup a handler with the API password
         username = ""
         password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
-        password_mgr.add_password(None, api_endpoint, username, siad.get_password())
+        password_mgr.add_password(None, api_endpoint, username, spd.get_password())
         handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
 
         # Setup an opener with the correct user agent
         opener = urllib.request.build_opener(handler)
-        opener.addheaders = [('User-agent', 'Sia-Agent')]
+        opener.addheaders = [('User-agent', 'ScPrime-Agent')]
 
         # Install the opener.
         # Now all calls to urllib.request.urlopen use our opener.
@@ -91,10 +91,10 @@ class siad:
     @staticmethod
     def get_password():
         # Get a port or use default
-        password = os.getenv("SIA_API_PASSWORD")
+        password = os.getenv("SCP_API_PASSWORD")
         if not password:
             home = os.getenv("HOME")
-            password_file = open(home+"/.sia/apipassword")
+            password_file = open(home+"/.scprime/apipassword")
             password = password_file.readlines()[0].strip()
         return password
 
@@ -109,7 +109,7 @@ class siad:
         if not setup_done: setup()
 
         resp = urllib.request.urlopen(api_endpoint + "/wallet").read()
-        return siad.load_json(resp)
+        return spd.load_json(resp)
 
 
     @staticmethod
@@ -117,7 +117,7 @@ class siad:
         if not setup_done: setup()
 
         resp = urllib.request.urlopen(api_endpoint + "/renter").read()
-        return siad.load_json(resp)
+        return spd.load_json(resp)
 
 
     @staticmethod
@@ -125,4 +125,4 @@ class siad:
         if not setup_done: setup()
 
         resp = urllib.request.urlopen(api_endpoint + "/renter/contracts").read()
-        return siad.load_json(resp)
+        return spd.load_json(resp)
