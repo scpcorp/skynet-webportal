@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context("Skynet", () => {
+context("PublicPortals", () => {
   beforeEach(() => {
     cy.visit("");
   });
@@ -8,18 +8,16 @@ context("Skynet", () => {
   it("should render key website elements", () => {
     cy.contains("Build a Free Internet");
     cy.contains("Upload your Files");
-    cy.contains("Have a Skylink?");
+    cy.contains("Have a Publink?");
   });
 
   it("should be able to upload a file", () => {
     cy.server();
-    cy.route("POST", "/skynet/skyfile").as("upload");
+    cy.route("POST", "/pubaccess/pubfile").as("upload");
 
     const fileName = "check.json";
 
-    cy.fixture(fileName).then((fileContent) => {
-      cy.get('.home-upload input[type="file"]').upload({ fileContent, fileName, mimeType: "application/json" });
-    });
+    cy.get('.home-upload input[type="file"]').attachFile(fileName);
 
     cy.get(".home-uploaded-files").children().should("have.length", 1);
 
