@@ -2,5 +2,5 @@
 set -e
 
 set -o allexport
-source ~/.sia/sia-upload.env
+source ~/.scp/scp-upload.env
 set +o allexport
