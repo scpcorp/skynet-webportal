@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 """
-health-checker runs simple health checks on a portal node using the siad API and
+health-checker runs simple health checks on a portal node using the spd API and
 dispatches messages to a Discord channel.
 """
 
 import discord, traceback
-from bot_utils import setup, send_msg, siad, sc_precision
+from bot_utils import setup, send_msg, spd, scp_precision
 
 bot_token = setup()
 client = discord.Client()
@@ -18,7 +18,7 @@ async def on_ready():
 
 
 async def run_checks():
-    print("Running Skynet portal health checks")
+    print("Running Public Portal health checks")
     try:
         await check_health()
 
@@ -32,18 +32,18 @@ async def run_checks():
 # all checks pass it sends a informational message.
 async def check_health():
     print("\nChecking wallet/funds health...")
-    wallet_get = siad.get_wallet()
-    renter_get = siad.get_renter()
+    wallet_get = spd.get_wallet()
+    renter_get = spd.get_renter()
 
     if not wallet_get['unlocked']:
         await send_msg(client, "Wallet locked", force_notify=True)
         return
 
-    confirmed_coins = int(wallet_get['confirmedsiacoinbalance'])
-    unconfirmed_coins = int(wallet_get['unconfirmedincomingsiacoins'])
-    unconfirmed_outgoing_coins = int(wallet_get['unconfirmedoutgoingsiacoins'])
+    confirmed_coins = int(wallet_get['confirmedscpbalance'])
+    unconfirmed_coins = int(wallet_get['unconfirmedincomingscp'])
+    unconfirmed_outgoing_coins = int(wallet_get['unconfirmedoutgoingscp'])
     balance = confirmed_coins + unconfirmed_coins - unconfirmed_outgoing_coins
-    print("Balance: ", balance / sc_precision)
+    print("Balance: ", balance / scp_precision)
 
     allowance = renter_get['settings']['allowance']
     allowance_funds = int(allowance['funds'])
@@ -51,8 +51,8 @@ async def check_health():
     unallocated_funds = allowance_funds - allocated_funds
 
 
-    balance_msg = "Balance: `{} SC` Allowance Funds: `{} SC`".format(round(balance/sc_precision), round(allowance_funds/sc_precision))
-    alloc_msg = "Unallocated: `{} SC`\nAllocated: `{} SC`".format(round(unallocated_funds/sc_precision), round(allocated_funds/sc_precision))
+    balance_msg = "Balance: `{} SCP` Allowance Funds: `{} SCP`".format(round(balance/scp_precision), round(allowance_funds/scp_precision))
+    alloc_msg = "Unallocated: `{} SCP`\nAllocated: `{} SCP`".format(round(unallocated_funds/scp_precision), round(allocated_funds/scp_precision))
 
     # Send an alert if there is less than 1 allowance worth of money left.
     if balance < allowance_funds:
