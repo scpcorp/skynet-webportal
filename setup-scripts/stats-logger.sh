@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 LOGFILE=$1
-SIA_PORT=${SIA_PORT:-9980}
+SCP_PORT=${SCP_PORT:-4280}
 
 # This is a logger service that pulls some current skynet stats and appends them to json log file.
 # You should probably run it using crontab, most likely as a root due to access_log read restrictions.
@@ -9,8 +9,8 @@ SIA_PORT=${SIA_PORT:-9980}
 # basic usage:
 # setup-scripts/stats-logger.sh public/logs.json
 #
-# usage with custom sia port:
-# SIA_PORT=9970 setup-scripts/stats-logger.sh public/logs.json
+# usage with custom scp port:
+# SCP_PORT=4270 setup-scripts/stats-logger.sh public/logs.json
 #
 # configuring hourly logging with crontab (run crontab -e)
 # 0 * * * * /home/user/skynet-webportal/setup-scripts/stats-logger.sh /home/user/skynet-webportal/public/stats.json >/dev/null 2>&1
@@ -40,14 +40,14 @@ fi
 awk -vDate=`date -d'now-1 hours' +[%d/%b/%Y:%H:%M:%S` ' { if ($4 > Date) print $0}' /var/log/nginx/access.log > /var/log/nginx/access_last_hour.log
 DOWNLOADS_COUNT_LAST_HOUR=$(awk '{print $7}' /var/log/nginx/access_last_hour.log | grep -E '/[a-zA-Z0-9_-]{46}(/.*)?' | wc -l)
 
-# get siac output
-SKYNET_LS=$(/home/user/go/bin/siac skynet ls --addr localhost:${SIA_PORT} | grep -i listing)
-SKYNET_LS_REGEX="Listing (.*) files\/dirs:\s+(.*)"
-if [[ "${SKYNET_LS}" =~ $SKYNET_LS_REGEX ]]; then
-	SKYFILES_COUNT="${BASH_REMATCH[1]}"
-	SKYFILES_SIZE_BYTES=$(echo ${BASH_REMATCH[2]} | sed -r 's/[ B]//g' | numfmt --from=iec)
+# get spc output
+PORTAL_LS=$(/home/user/go/bin/spc pubaccess ls --addr localhost:${SCP_PORT} | grep -i listing)
+PORTAL_LS_REGEX="Listing (.*) files\/dirs:\s+(.*)"
+if [[ "${PORTAL_LS}" =~ $PORTAL_LS_REGEX ]]; then
+	PUBFILES_COUNT="${BASH_REMATCH[1]}"
+	PUBFILES_SIZE_BYTES=$(echo ${BASH_REMATCH[2]} | sed -r 's/[ B]//g' | numfmt --from=iec)
 fi
 
 DATE=$(date -u +"%Y-%m-%d %H:%M:%S")
-LOG_ENTRY=$(echo {\"date\":\"${DATE}\", \"skyfiles_count\":${SKYFILES_COUNT}, \"skyfiles_size_bytes\":${SKYFILES_SIZE_BYTES}, \"downloads_count_last_hour\":${DOWNLOADS_COUNT_LAST_HOUR}})
+LOG_ENTRY=$(echo {\"date\":\"${DATE}\", \"pubfiles_count\":${PUBFILES_COUNT}, \"pubfiles_size_bytes\":${PUBFILES_SIZE_BYTES}, \"downloads_count_last_hour\":${DOWNLOADS_COUNT_LAST_HOUR}})
 jq -c ". += [${LOG_ENTRY}]" $LOGFILE | sponge $LOGFILE
