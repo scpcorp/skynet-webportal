@@ -117,4 +117,4 @@ set -o allexport
 source ~/.sia/sia.env
 set +o allexport
 
-alias siac-upload="source ~/.sia/source-upload.sh; siac --addr 'localhost:9970'"
+alias spc-upload="source ~/.spc/source-upload.sh; spc --addr 'localhost:4270'"

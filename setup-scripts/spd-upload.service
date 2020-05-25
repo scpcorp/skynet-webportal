@@ -1,0 +1,14 @@
+[Unit]
+Description=spd-upload
+
+[Service]
+Type=simple
+WorkingDirectory=/home/user/spd-upload
+EnvironmentFile=/home/user/.spc/spd-upload.env
+ExecStart=/home/user/go/bin/spd --api-addr "localhost:4280" --rpc-addr ":4281" --host-addr ":4282" --siamux-addr ":4283" --siamux-addr-ws ":4284"
+ExecStop=/home/user/go/bin/spc --addr "localhost:4280" stop
+Restart=on-failure
+SyslogIdentifier=spd-upload
+
+[Install]
+WantedBy=default.target

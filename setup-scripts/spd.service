@@ -1,0 +1,14 @@
+[Unit]
+Description=spd
+
+[Service]
+Type=simple
+WorkingDirectory=/home/user/spd
+EnvironmentFile=/home/user/.scp/scp.env
+ExecStart=/home/user/go/bin/spd
+ExecStop=/home/user/go/bin/spc stop
+Restart=on-failure
+SyslogIdentifier=spd
+
+[Install]
+WantedBy=default.target

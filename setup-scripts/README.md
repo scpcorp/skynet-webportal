@@ -49,7 +49,7 @@ The setup script creates a systemd user service that will run `spd` in the
 background and automatically restart upon failure. The `spd.service` file must
 be placed in `~/.config/systemd/user/`
 
-To use the `spd.service`, first fill out `~/.scprime/siaprime.env` environment variables with the
+To use the `spd.service`, first fill out `~/.scp/scp.env` environment variables with the
 correct values. You will need to initialize your wallet if you have not already
 done so.
 
